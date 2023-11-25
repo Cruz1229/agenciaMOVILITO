@@ -11,4 +11,26 @@
             <mat-divider></mat-divider>
         </mat-list>
     </div>
+    <div class="grid">
+        <div class="card" *ngFor="let car of inventarioNuevos">
+            <mat-card class="example-card">
+                <mat-card-header>
+                <mat-card-title>{{ car.marca }}</mat-card-title>
+                <mat-card-subtitle>{{ car.modelo }}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="car.imagenBase64" alt="Photo" height="130">
+                <mat-card-content>
+                <ul>
+                    <li>{{ car.color }}</li>
+                    <li>Diponibles: {{ car.cantidad }} unidades</li>
+                </ul>
+                </mat-card-content>
+                <mat-card-actions>
+                <div class="action">
+                    <p>{{ car.estado }}</p>
+                </div>
+                </mat-card-actions>
+            </mat-card> 
+        </div>    
+    </div>
 </app-content>
