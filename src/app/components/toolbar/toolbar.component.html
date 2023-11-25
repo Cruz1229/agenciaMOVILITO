@@ -1,0 +1,40 @@
+<div class="toolbar" role="banner">
+    <div class="logoNombre" (click)="home()">
+      <img
+        id="logo"
+        width="110"
+        alt="MOVILITO"
+        src="../assets/img/logoIconoCopy.png"
+      />
+      <img
+        id="logoNombre"
+        alt="MOVILITO"
+        src="../assets/img/logoNombewcopy.png"
+      />
+      <!-- <span>MOVILITO</span> -->
+    </div>
+    <div class="spacer"></div>
+    <button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <span>Seminuevos</span>
+    </a>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <span>Promociones</span>
+    </a>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <span>Servicios y refacciones</span>
+    </a>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <span>Financiamiento</span>
+    </a>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <span>Nosotros</span>
+    </a>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <span>Blog</span>
+    </a>
+</div>

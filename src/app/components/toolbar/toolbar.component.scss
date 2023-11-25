@@ -1,0 +1,60 @@
+.logoNombre
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoNombre img:hover
+{
+    cursor: pointer;
+}
+
+#logo 
+{
+    border-radius: 100%;
+}
+
+#logoNombre
+{
+    margin: 0;
+}
+
+.toolbar
+{
+    background: #1B1A1F !important;
+}
+
+.spacer 
+{
+    flex: 1;
+}
+
+a
+{
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+    width: 120px;
+    text-align: center;
+}
+
+.toolbar 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    //border-radius: 100px;
+}
+
+.toolbar img 
+{
+    margin: 0 16px;
+}

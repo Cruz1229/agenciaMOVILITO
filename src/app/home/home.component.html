@@ -1,0 +1,33 @@
+<app-toolbar></app-toolbar>
+<app-content>
+  
+  <div class="slider">
+    <div class="slide">
+        <ng-image-slider 
+            [images]="imageObject" #nav
+            [infinite]="true"
+            [slideImage]="1"
+            [showArrow]="true"
+            [autoSlide]="{interval:4,stopOnHover:true}"
+            [imageSize]="{width:900,height:300,space:1}"
+        ></ng-image-slider>
+    </div>
+  </div>
+
+  <div class="pac-card" id="pac-card">
+    <div>
+      <div id="title">Busca tu sucursal</div>
+    </div>
+    <div id="pac-container">
+      <input id="pac-input" type="text" placeholder="Ingresa una dirección" />
+    </div>
+  </div>
+  <div class="aux">
+    <div id="map"></div>
+  </div>
+  <div id="infowindow-content">
+    <span id="place-name" class="title"></span><br />
+    <span id="place-address"></span>
+  </div>
+
+</app-content>
