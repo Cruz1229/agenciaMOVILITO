@@ -1,0 +1,26 @@
+p {
+    margin-top: 0;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+mat-list-item {
+    height: 20px;
+}
+
+mat-list-item p {
+    color: black !important;
+    margin-bottom: 0;
+}
+
+mat-divider {
+    width: 210px;
+    margin-left: 12px;
+    border-top-color: #000000;
+    border-top-width: 3px;
+}

@@ -16,4 +16,9 @@ export class ToolbarComponent {
     this.router.navigate(['/']);
   }
 
+  inventarioNuevos()
+  {
+    this.router.navigate(['/inventario-nuevos']);
+  }
+
 }

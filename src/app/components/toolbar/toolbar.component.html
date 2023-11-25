@@ -16,7 +16,7 @@
     <div class="spacer"></div>
     <button mat-button [matMenuTriggerFor]="newCar">Autos nuevos</button>
     <mat-menu #newCar="matMenu" xPosition="after">
-      <button mat-menu-item>Inventario de autos nuevos</button>
+      <button (click)="inventarioNuevos()" mat-menu-item>Inventario de autos nuevos</button>
       <button mat-menu-item>Nuestras Marcas</button>
       <button mat-menu-item>Agenda tu prueba de manejo</button>
       <button mat-menu-item>Solicita una cotización</button>

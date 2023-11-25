@@ -10,13 +10,17 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InventarioNuevosComponent } from './inventario-nuevos/inventario-nuevos.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContentComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    InventarioNuevosComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatMenuModule,
     NgImageSliderModule,
     MatButtonModule, 
-    MatMenuModule, BrowserAnimationsModule
+    MatMenuModule,
+    MatDividerModule,
+    MatListModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
