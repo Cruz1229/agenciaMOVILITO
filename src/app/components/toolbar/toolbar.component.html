@@ -1,5 +1,5 @@
 <div class="toolbar" role="banner">
-    <div class="logoNombre" (click)="home()">
+    <div class="logoNombre" (click)="path('home')">
       <img
         id="logo"
         width="110"
@@ -16,8 +16,8 @@
     <div class="spacer"></div>
     <button mat-button [matMenuTriggerFor]="newCar">Autos nuevos</button>
     <mat-menu #newCar="matMenu" xPosition="after">
-      <button (click)="inventarioNuevos()" mat-menu-item>Inventario de autos nuevos</button>
-      <button mat-menu-item>Nuestras Marcas</button>
+      <button (click)="path('inventario-nuevos')" mat-menu-item>Inventario de autos nuevos</button>
+      <button (click)="path('nuestras-marcas')" mat-menu-item>Nuestras Marcas</button>
       <button mat-menu-item>Agenda tu prueba de manejo</button>
       <button mat-menu-item>Solicita una cotización</button>
       <button mat-menu-item>Tomamos tu auto a cuenta</button>

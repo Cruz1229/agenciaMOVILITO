@@ -1,0 +1,48 @@
+p {
+    margin-top: 0;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.subtitle { 
+    text-align: center;
+}
+
+mat-list-item {
+    height: 20px;
+}
+
+mat-list-item p {
+    color: black !important;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+mat-divider {
+    width: 97%;
+    margin-left: 20px;
+    margin-right: 20PX;
+    border-top-color: #000000;
+    border-top-width: 3px;
+}
+
+.grid {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}

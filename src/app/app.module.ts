@@ -15,6 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from  '@angular/common/http';
+import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from  '@angular/common/http';
     HomeComponent,
     ContentComponent,
     ToolbarComponent,
-    InventarioNuevosComponent
+    InventarioNuevosComponent,
+    NuestrasMarcasComponent
   ],
   imports: [
     BrowserModule,

@@ -11,14 +11,12 @@ export class ToolbarComponent {
     private router: Router
   ) {}
 
-  home()
+  path(path:string)
   {
-    this.router.navigate(['/']);
-  }
-
-  inventarioNuevos()
-  {
-    this.router.navigate(['/inventario-nuevos']);
+    if (path == 'home')
+      this.router.navigate(['/']);
+    else
+      this.router.navigate(['/'+path]);
   }
 
 }

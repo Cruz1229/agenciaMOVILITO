@@ -1,0 +1,19 @@
+<app-toolbar></app-toolbar>
+<app-content>
+    <div class="title">
+        <p>NUESTRAS MARCAS</p>
+    </div>
+    <div class="subtitle">
+        <mat-list>
+            <mat-list-item>
+                <p>CONOCE NUESTRAS MARCAS</p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list>
+    </div>
+    <div class="grid">
+        <div class="card" *ngFor="let marca of images">
+            <img [src]="marca.src" height="120">
+        </div>    
+    </div>
+</app-content>
