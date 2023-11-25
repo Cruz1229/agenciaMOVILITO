@@ -14,27 +14,33 @@
       <!-- <span>MOVILITO</span> -->
     </div>
     <div class="spacer"></div>
-    <button mat-button [matMenuTriggerFor]="afterMenu">After</button>
-    <mat-menu #afterMenu="matMenu" xPosition="after">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
+    <button mat-button [matMenuTriggerFor]="newCar">Autos nuevos</button>
+    <mat-menu #newCar="matMenu" xPosition="after">
+      <button mat-menu-item>Inventario de autos nuevos</button>
+      <button mat-menu-item>Nuestras Marcas</button>
+      <button mat-menu-item>Agenda tu prueba de manejo</button>
+      <button mat-menu-item>Solicita una cotización</button>
+      <button mat-menu-item>Tomamos tu auto a cuenta</button>
     </mat-menu>
-    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-      <span>Seminuevos</span>
-    </a>
-    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-      <span>Promociones</span>
-    </a>
-    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-      <span>Servicios y refacciones</span>
-    </a>
-    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-      <span>Financiamiento</span>
-    </a>
-    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-      <span>Nosotros</span>
-    </a>
-    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-      <span>Blog</span>
-    </a>
+    <button mat-button [matMenuTriggerFor]="semiNewCar">Seminuevos</button>
+    <mat-menu #semiNewCar="matMenu" xPosition="after">
+      <button mat-menu-item>Inventario de autos seminuevos</button>
+      <button mat-menu-item>Agenda tu prueba de manejo</button>
+      <button mat-menu-item>Solicita una cotización</button>
+      <button mat-menu-item>Tomamos tu auto a cuenta</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="promociones">Promociones</button>
+    <mat-menu #promociones="matMenu" xPosition="after">
+      <button mat-menu-item>Promociones de autos nuevos</button>
+      <button mat-menu-item>Promociones de seminuevos</button>
+      <button mat-menu-item>Promociones de servicio</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="services">Servicios y refacciones</button>
+    <mat-menu #services="matMenu" xPosition="after">
+      <button mat-menu-item>Departamento de Post-Venta</button>
+      <button mat-menu-item>Refacciones originales</button>
+    </mat-menu>
+    <button mat-button>Financiamiento</button>
+    <button mat-button>Nosotros</button>
+    <button mat-button>Blog</button>
 </div>
