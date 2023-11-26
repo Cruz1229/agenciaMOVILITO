@@ -1,0 +1,62 @@
+<app-toolbar></app-toolbar>
+<app-content>
+    <div class="title">
+        <p id="titulo">FINANCIAMIENTO Y SEGUROS</p>
+    </div>
+    <div class="banner">
+        <img src="../../../assets/img/financiamiento.jpg" width="100%">
+    </div>
+    <div class="grid">
+        <div class="texto-uno">
+            <h2>CONOCE MÁS SOBRE NUESTRAS OPCIONES DE CRÉDITO AUTOMOTRIZ EN ORIZABA, VERACRUZ</h2>
+            <button mat-raised-button>Basic</button>
+        </div>
+        <div class="texto-dos">
+            <h4>En movilito queremos que tu experiencia en nuestra agencia exceda tus expectativas.</h4>
+            <h4>Nuestros asesores trabajan con personas de todo tipo de ocupaciones y se aseguran de que nuestros clientes encuentren el plan de financiamiento que se adecua a sus necesidades.</h4>
+        </div>
+    </div>
+    <div class="grid-image">
+        <div class="image" *ngFor="let src of images">
+            <img [src]="src.src" width="100">
+        </div>
+    </div>
+    <div class="subtitle">
+        <h3>¡SOLO LOS MEJORES PLANES DE FINANCIAMIENTO PARA QUE ESTRENES AHORA!</h3>
+    </div>
+    <div class="grid-dos">
+        <div class="texto-uno">
+            <h1>TENEMOS UN PLAN IDEAL PARA TI ¡PREGUNTA MÁS INFORMACIÓN!</h1>
+            <div class="contact">
+                <button mat-raised-button>Basic</button>
+            </div>
+            <h4>En movilito trabajamos con las mejores financieras automotices de México.</h4>
+            <h4>Nuestros planes de financiamiento y leasing, se pueden ajustar a tu presupuesto según el modelo que elijas.</h4>
+            <h4>De forma general los financiamientos pueden arrancar</h4>
+            <h1>DESDE EL 20% DE ENGANCHE HASTA 60 MESES PARA PAGAR</h1>
+            <div class="horarios">
+                <h5>HORARIOS</h5>
+                <h5>Ventas: 9:00 a.m - 8:00 p.m</h5>
+                <h5>Servicio: 9:00 a.m - 6:00 p.m</h5>
+                <h5>Financiamiento: 7:30 a.m - 6:00 p.m</h5>
+            </div>
+        </div>
+        <div class="texto-dos">
+            <h4>La tasa varia según el monto a financiar, la marca y la promoción vigente al momento de la compra.</h4>
+            <h4>Recuerda siempre que, al adquirir un crédito automotriz se debe cubrir.</h4>
+            <h4>Comisión por apertura. Es un porcentaje que se paga por el otorgamiento del crédito.
+                Puede ser igual a 0% si se cuenta con la promoción al momento de la compra.
+                Seguro Automotriz. El costo dependerá del valor del auto. Puede ser gratuito el primer año si se cuenta con la promoción al momento de la compra.
+                Seguro de vida y desempleo. Este seguro cubrirá el monto faltante por liquidar en caso de fallecimiento, o una parte durante un lapso determinado en caso de desempleo.
+                Se deberán consultar las codiciones al momento de contratar.</h4>
+            <h4>¿Tienes más dudas?</h4>
+            <h4>En grupo Farrera queremos que tu experiencia de compra exceda tus expectativas.</h4>
+            <h4>Pregúntanos todas tus dudas.</h4>
+            <h4>DIRECCIÓN Y TELÉFONOS</h4>
+            <h4 id="tel">Calle 11A. Pte Sur 1128, Orizaba, Veracruz, México 29000</h4>
+            <h4 id="tel">Ventas 271-191-8424</h4>
+            <h4 id="tel">Servicio 271-191-8424</h4>
+            <h4 id="tel">Financiamiento 271-191-8424</h4>
+        </div>
+    </div>
+</app-content>

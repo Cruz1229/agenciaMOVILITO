@@ -40,7 +40,11 @@
       <button (click)="path('post-venta')" mat-menu-item>Departamento de Post-Venta</button>
       <button (click)="path('refacciones-originales')" mat-menu-item>Refacciones originales</button>
     </mat-menu>
-    <button id="topMenu" mat-button>Financiamiento</button>
+    <button id="topMenu" mat-button [matMenuTriggerFor]="financiamiento">Financiamiento</button>
+    <mat-menu #financiamiento="matMenu" xPosition="after">
+      <button (click)="path('departamento-ventas')" mat-menu-item>Departamento de Ventas</button>
+      <button (click)="path('aprobacion-credito')" mat-menu-item>Pre-Aprobación de crédito</button>
+    </mat-menu>
     <button id="topMenu" mat-button>Nosotros</button>
     <button id="topMenu" mat-button>Blog</button>
 </div>
