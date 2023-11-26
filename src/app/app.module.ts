@@ -31,6 +31,7 @@ import { PromocionNuevosComponent } from './promociones/promocion-nuevos/promoci
 import { PromocionSeminuevosComponent } from './promociones/promocion-seminuevos/promocion-seminuevos.component';
 import { PromocionServiciosComponent } from './promociones/promocion-servicios/promocion-servicios.component';
 import { PostVentaComponent } from './servicios-refacciones/post-venta/post-venta.component';
+import { RefaccionesOriginalesComponent } from './servicios-refacciones/refacciones-originales/refacciones-originales.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { PostVentaComponent } from './servicios-refacciones/post-venta/post-vent
     PromocionSeminuevosComponent,
     PromocionServiciosComponent,
     PostVentaComponent,
+    RefaccionesOriginalesComponent,
   ],
   imports: [
     BrowserModule,

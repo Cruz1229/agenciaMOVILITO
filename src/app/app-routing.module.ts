@@ -14,6 +14,7 @@ import { PromocionNuevosComponent } from './promociones/promocion-nuevos/promoci
 import { PromocionSeminuevosComponent } from './promociones/promocion-seminuevos/promocion-seminuevos.component';
 import { PromocionServiciosComponent } from './promociones/promocion-servicios/promocion-servicios.component';
 import { PostVentaComponent } from './servicios-refacciones/post-venta/post-venta.component';
+import { RefaccionesOriginalesComponent } from './servicios-refacciones/refacciones-originales/refacciones-originales.component';
 
 const routes: Routes = [
   {
@@ -76,6 +77,10 @@ const routes: Routes = [
   {
     path: 'post-venta',
     component: PostVentaComponent
+  },
+  {
+    path: 'refacciones-originales',
+    component: RefaccionesOriginalesComponent
   },
 ];
 
