@@ -37,8 +37,8 @@
     </mat-menu>
     <button id="topMenu" mat-button [matMenuTriggerFor]="services">Servicios y refacciones</button>
     <mat-menu #services="matMenu" xPosition="after">
-      <button mat-menu-item>Departamento de Post-Venta</button>
-      <button mat-menu-item>Refacciones originales</button>
+      <button (click)="path('post-venta')" mat-menu-item>Departamento de Post-Venta</button>
+      <button (click)="path('refacciones-originales')" mat-menu-item>Refacciones originales</button>
     </mat-menu>
     <button id="topMenu" mat-button>Financiamiento</button>
     <button id="topMenu" mat-button>Nosotros</button>

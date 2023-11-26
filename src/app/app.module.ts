@@ -30,6 +30,7 @@ import { AutoCuentaSeminuevosComponent } from './seminuevos/auto-cuenta-seminuev
 import { PromocionNuevosComponent } from './promociones/promocion-nuevos/promocion-nuevos.component';
 import { PromocionSeminuevosComponent } from './promociones/promocion-seminuevos/promocion-seminuevos.component';
 import { PromocionServiciosComponent } from './promociones/promocion-servicios/promocion-servicios.component';
+import { PostVentaComponent } from './servicios-refacciones/post-venta/post-venta.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { PromocionServiciosComponent } from './promociones/promocion-servicios/p
     PromocionNuevosComponent,
     PromocionSeminuevosComponent,
     PromocionServiciosComponent,
+    PostVentaComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,103 @@
+p {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-list-item {
+    height: 20px;
+}
+
+mat-list-item p {
+    color: black !important;
+    margin-bottom: 0;
+}
+
+mat-divider {
+    width: 100%;
+    //margin-left: 12px;
+    border-top-color: #000000;
+    border-top-width: 2px;
+}
+
+.cont-uno {
+    padding-top: 40px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.cont-uno .text, .tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-uno h3 {
+    text-decoration: underline;
+    width: 200px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.cont-dos {
+    padding-top: 40px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.cont-dos .image, .tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-dos .image img {
+    border-radius: 50px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 50px;
+    text-align: justify;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 30px;
+    text-decoration: underline;
+}

@@ -13,6 +13,7 @@ import { AutoCuentaSeminuevosComponent } from './seminuevos/auto-cuenta-seminuev
 import { PromocionNuevosComponent } from './promociones/promocion-nuevos/promocion-nuevos.component';
 import { PromocionSeminuevosComponent } from './promociones/promocion-seminuevos/promocion-seminuevos.component';
 import { PromocionServiciosComponent } from './promociones/promocion-servicios/promocion-servicios.component';
+import { PostVentaComponent } from './servicios-refacciones/post-venta/post-venta.component';
 
 const routes: Routes = [
   {
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: 'promocion-servicios',
     component: PromocionServiciosComponent
+  },
+  {
+    path: 'post-venta',
+    component: PostVentaComponent
   },
 ];
 
