@@ -22,6 +22,7 @@ import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.compo
 import { PruebaManejoComponent } from './prueba-manejo/prueba-manejo.component';
 import { FormsModule } from '@angular/forms';
 import { CotizacionComponent } from './cotizacion/cotizacion.component';
+import { AutoCuentaComponent } from './auto-cuenta/auto-cuenta.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CotizacionComponent } from './cotizacion/cotizacion.component';
     NuestrasMarcasComponent,
     PruebaManejoComponent,
     CotizacionComponent,
+    AutoCuentaComponent,
   ],
   imports: [
     BrowserModule,

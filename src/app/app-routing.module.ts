@@ -5,6 +5,7 @@ import { InventarioNuevosComponent } from './inventario-nuevos/inventario-nuevos
 import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.component';
 import { PruebaManejoComponent } from './prueba-manejo/prueba-manejo.component';
 import { CotizacionComponent } from './cotizacion/cotizacion.component';
+import { AutoCuentaComponent } from './auto-cuenta/auto-cuenta.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'cotizacion',
     component: CotizacionComponent
+  },
+  {
+    path: 'auto-cuenta',
+    component: AutoCuentaComponent
   },
 ];
 
