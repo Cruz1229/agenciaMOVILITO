@@ -31,9 +31,9 @@
     </mat-menu>
     <button id="topMenu" mat-button [matMenuTriggerFor]="promociones">Promociones</button>
     <mat-menu #promociones="matMenu" xPosition="after">
-      <button mat-menu-item>Promociones de autos nuevos</button>
-      <button mat-menu-item>Promociones de seminuevos</button>
-      <button mat-menu-item>Promociones de servicio</button>
+      <button (click)="path('promocion-nuevos')" mat-menu-item>Promociones de autos nuevos</button>
+      <button (click)="path('promocion-seminuevos')" mat-menu-item>Promociones de seminuevos</button>
+      <button (click)="path('promocion-servicios')" mat-menu-item>Promociones de servicio</button>
     </mat-menu>
     <button id="topMenu" mat-button [matMenuTriggerFor]="services">Servicios y refacciones</button>
     <mat-menu #services="matMenu" xPosition="after">

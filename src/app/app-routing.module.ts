@@ -10,6 +10,9 @@ import { InventarioComponent } from './seminuevos/inventario/inventario.componen
 import { PruebaManejoSeminuevosComponent } from './seminuevos/prueba-manejo-seminuevos/prueba-manejo-seminuevos.component';
 import { CotizacionSeminuevosComponent } from './seminuevos/cotizacion-seminuevos/cotizacion-seminuevos.component';
 import { AutoCuentaSeminuevosComponent } from './seminuevos/auto-cuenta-seminuevos/auto-cuenta-seminuevos.component';
+import { PromocionNuevosComponent } from './promociones/promocion-nuevos/promocion-nuevos.component';
+import { PromocionSeminuevosComponent } from './promociones/promocion-seminuevos/promocion-seminuevos.component';
+import { PromocionServiciosComponent } from './promociones/promocion-servicios/promocion-servicios.component';
 
 const routes: Routes = [
   {
@@ -56,6 +59,18 @@ const routes: Routes = [
   {
     path: 'auto-cuenta-seminuevos',
     component: AutoCuentaSeminuevosComponent
+  },
+  {
+    path: 'promocion-nuevos',
+    component: PromocionNuevosComponent
+  },
+  {
+    path: 'promocion-seminuevos',
+    component: PromocionSeminuevosComponent
+  },
+  {
+    path: 'promocion-servicios',
+    component: PromocionServiciosComponent
   },
 ];
 
