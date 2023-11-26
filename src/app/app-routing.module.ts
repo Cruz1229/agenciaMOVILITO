@@ -7,6 +7,9 @@ import { PruebaManejoComponent } from './autos-nuevos/prueba-manejo/prueba-manej
 import { CotizacionComponent } from './autos-nuevos/cotizacion/cotizacion.component';
 import { AutoCuentaComponent } from './autos-nuevos/auto-cuenta/auto-cuenta.component';
 import { InventarioComponent } from './seminuevos/inventario/inventario.component';
+import { PruebaManejoSeminuevosComponent } from './seminuevos/prueba-manejo-seminuevos/prueba-manejo-seminuevos.component';
+import { CotizacionSeminuevosComponent } from './seminuevos/cotizacion-seminuevos/cotizacion-seminuevos.component';
+import { AutoCuentaSeminuevosComponent } from './seminuevos/auto-cuenta-seminuevos/auto-cuenta-seminuevos.component';
 
 const routes: Routes = [
   {
@@ -41,6 +44,18 @@ const routes: Routes = [
   {
     path: 'inventario',
     component: InventarioComponent
+  },
+  {
+    path: 'prueba-manejo-seminuevos',
+    component: PruebaManejoSeminuevosComponent
+  },
+  {
+    path: 'cotizacion-seminuevos',
+    component: CotizacionSeminuevosComponent
+  },
+  {
+    path: 'auto-cuenta-seminuevos',
+    component: AutoCuentaSeminuevosComponent
   },
 ];
 

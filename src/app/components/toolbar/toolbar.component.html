@@ -25,9 +25,9 @@
     <button id="topMenu" mat-button [matMenuTriggerFor]="semiNewCar">Seminuevos</button>
     <mat-menu #semiNewCar="matMenu" xPosition="after">
       <button (click)="path('inventario')" mat-menu-item>Inventario de autos seminuevos</button>
-      <button mat-menu-item>Agenda tu prueba de manejo</button>
-      <button mat-menu-item>Solicita una cotización</button>
-      <button mat-menu-item>Tomamos tu auto a cuenta</button>
+      <button (click)="path('prueba-manejo-seminuevos')" mat-menu-item>Agenda tu prueba de manejo</button>
+      <button (click)="path('cotizacion-seminuevos')" mat-menu-item>Solicita una cotización</button>
+      <button (click)="path('auto-cuenta-seminuevos')" mat-menu-item>Tomamos tu auto a cuenta</button>
     </mat-menu>
     <button id="topMenu" mat-button [matMenuTriggerFor]="promociones">Promociones</button>
     <mat-menu #promociones="matMenu" xPosition="after">
