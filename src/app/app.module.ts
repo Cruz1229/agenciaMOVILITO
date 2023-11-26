@@ -24,6 +24,7 @@ import { FormsModule } from '@angular/forms';
 import { CotizacionComponent } from './autos-nuevos/cotizacion/cotizacion.component';
 import { AutoCuentaComponent } from './autos-nuevos/auto-cuenta/auto-cuenta.component';
 import { InventarioComponent } from './seminuevos/inventario/inventario.component';
+import { PruebaManejoSeminuevosComponent } from './seminuevos/prueba-manejo-seminuevos/prueba-manejo-seminuevos.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { InventarioComponent } from './seminuevos/inventario/inventario.componen
     CotizacionComponent,
     AutoCuentaComponent,
     InventarioComponent,
+    PruebaManejoSeminuevosComponent,
   ],
   imports: [
     BrowserModule,
