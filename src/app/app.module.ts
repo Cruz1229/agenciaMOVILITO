@@ -14,8 +14,13 @@ import { InventarioNuevosComponent } from './inventario-nuevos/inventario-nuevos
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from  '@angular/common/http';
 import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.component';
+import { PruebaManejoComponent } from './prueba-manejo/prueba-manejo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,8 @@ import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.compo
     ContentComponent,
     ToolbarComponent,
     InventarioNuevosComponent,
-    NuestrasMarcasComponent
+    NuestrasMarcasComponent,
+    PruebaManejoComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +42,10 @@ import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.compo
     MatDividerModule,
     MatListModule,
     MatCardModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    FormsModule,
     BrowserAnimationsModule,
     HttpClientModule
   ],

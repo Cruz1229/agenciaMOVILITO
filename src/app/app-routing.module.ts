@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { InventarioNuevosComponent } from './inventario-nuevos/inventario-nuevos.component';
 import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.component';
+import { PruebaManejoComponent } from './prueba-manejo/prueba-manejo.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'nuestras-marcas',
     component: NuestrasMarcasComponent
+  },
+  {
+    path: 'prueba-manejo',
+    component: PruebaManejoComponent
   },
 ];
 

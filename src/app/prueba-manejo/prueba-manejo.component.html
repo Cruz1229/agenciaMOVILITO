@@ -1,0 +1,115 @@
+<app-toolbar></app-toolbar>
+<app-content>
+    <div class="title">
+        <p>AGENDA TU PRUEBA DE MANEJO</p>
+    </div>
+    <div class="subtitle">
+        <mat-list>
+            <mat-list-item>
+                <p>VEHÍCULO QUE DESEA PRUEBA DE MANEJO</p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list>
+    </div>
+    <mat-card class="example-card">
+        <div class="grid">
+            <div class="image">
+                <img src="../../assets/img/prubaManejo.jpg">
+            </div>
+            <form (submit)="$event.preventDefault()">
+                <div class="fields">
+                    <div class="twoColumns">
+                        <div class="nombre">
+                            <label>Nombre: </label>
+                            <mat-form-field>
+                                <mat-label>Ingrese su nombre</mat-label>
+                                <input matInput #input [ngModel]="nombre" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="apellidos">
+                            <label>Apellidos: </label>
+                            <mat-form-field>
+                                <mat-label>Ingrese sus apellidos</mat-label>
+                                <input matInput required>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <label>Correo Electrónico: </label>
+                    <mat-form-field>
+                        <mat-label>Ingresa tu correo electrónico</mat-label>
+                        <input matInput placeholder="pat@example.com" required>
+                    </mat-form-field>
+                    <div class="twoColumns">
+                        <div class="telefono">
+                            <label>Número de teléfono: </label>
+                            <mat-form-field>
+                                <mat-label>Ingrese su número de teléfono</mat-label>
+                                <input matInput #input type="number" (input)="onInputChange($event)" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="anno">
+                            <label>Año: </label>
+                            <mat-form-field>
+                                <mat-label>Ingrese el año del carro</mat-label>
+                                <input matInput #input type="number" (input)="onInputChangeYear($event)" required>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="twoColumns">
+                        <div class="marca">
+                            <label>Marca: </label>
+                            <mat-form-field>
+                                <mat-label>Ingrese la marca</mat-label>
+                                <input matInput required>
+                            </mat-form-field>
+                        </div>
+                        <div class="modelo">
+                            <label>Modelo: </label>
+                            <mat-form-field>
+                                <mat-label>Ingrese el modelo</mat-label>
+                                <input matInput required>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <label>Fecha: </label>
+                    <mat-form-field>
+                        <input matInput type="date" required>
+                    </mat-form-field>
+                    <label>Hora: </label>
+                    <mat-form-field>
+                        <input matInput type="time" required>
+                    </mat-form-field>
+                    <div class="submit">
+                        <button id="submit" type="submit" mat-raised-button>Basic</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <mat-card-footer>
+            <mat-list>
+                <mat-list-item id="list">
+                    <p>
+                        Porque no hay nada que se compare con la experiencia de manejar, te invitamos a que agendes con nosotros tu Prueba de Manejo, envia el siguiente formulario
+                    </p>
+                    <p>
+                        y en breve un Ejecutivo te contactará para acordar detalles.
+                    </p>
+                </mat-list-item>
+                <!-- <mat-divider id="divider-footer"></mat-divider> -->
+            </mat-list>
+        </mat-card-footer>
+        <!-- <img mat-card-image [src]="car.imagenBase64" alt="Photo" height="130">
+        <mat-card-content>
+        <ul>
+            <li>{{ car.color }}</li>
+            <li>Diponibles: {{ car.cantidad }} unidades</li>
+        </ul>
+        </mat-card-content>
+        <mat-card-actions>
+        <div class="action">
+            <p>{{ car.estado }}</p>
+        </div>
+        </mat-card-actions> -->
+    </mat-card> 
+    
+</app-content>
