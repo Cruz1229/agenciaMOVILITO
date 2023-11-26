@@ -1,0 +1,110 @@
+p {
+    margin-top: 0;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+#mat-list {
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+mat-list-item {
+    height: 10px;
+    padding-left: 0;
+}
+
+mat-list-item p {
+    color: black !important;
+    margin-bottom: 0;
+}
+
+mat-divider {
+    width: 100%;
+    margin-bottom: 5px;
+    border-top-color: #000000;
+    border-top-width: 3px;
+}
+
+.grid {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #000000;
+}
+
+.image img {
+    border-radius: 50px;
+}
+
+.example-card {
+    margin-top: 30px;
+    background: #FFFFFF;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-form-field {
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.twoColumns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nombre, .apellidos, .telefono, .anno, .marca, .modelo, .correo{
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    margin-top: 45px;
+    width: 50%;
+    border-radius: 50px;
+    background: #dfdfdf8f;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#list {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+#divider-footer {
+    width: 98%;
+}
+
+mat-card-footer {
+    padding-top: 20px;
+}

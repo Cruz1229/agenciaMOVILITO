@@ -21,6 +21,7 @@ import { HttpClientModule } from  '@angular/common/http';
 import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.component';
 import { PruebaManejoComponent } from './prueba-manejo/prueba-manejo.component';
 import { FormsModule } from '@angular/forms';
+import { CotizacionComponent } from './cotizacion/cotizacion.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     InventarioNuevosComponent,
     NuestrasMarcasComponent,
     PruebaManejoComponent,
+    CotizacionComponent,
   ],
   imports: [
     BrowserModule,
