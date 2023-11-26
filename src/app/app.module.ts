@@ -25,6 +25,7 @@ import { CotizacionComponent } from './autos-nuevos/cotizacion/cotizacion.compon
 import { AutoCuentaComponent } from './autos-nuevos/auto-cuenta/auto-cuenta.component';
 import { InventarioComponent } from './seminuevos/inventario/inventario.component';
 import { PruebaManejoSeminuevosComponent } from './seminuevos/prueba-manejo-seminuevos/prueba-manejo-seminuevos.component';
+import { CotizacionSeminuevosComponent } from './seminuevos/cotizacion-seminuevos/cotizacion-seminuevos.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { PruebaManejoSeminuevosComponent } from './seminuevos/prueba-manejo-semi
     AutoCuentaComponent,
     InventarioComponent,
     PruebaManejoSeminuevosComponent,
+    CotizacionSeminuevosComponent,
   ],
   imports: [
     BrowserModule,
