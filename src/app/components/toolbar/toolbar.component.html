@@ -24,7 +24,7 @@
     </mat-menu>
     <button id="topMenu" mat-button [matMenuTriggerFor]="semiNewCar">Seminuevos</button>
     <mat-menu #semiNewCar="matMenu" xPosition="after">
-      <button mat-menu-item>Inventario de autos seminuevos</button>
+      <button (click)="path('inventario')" mat-menu-item>Inventario de autos seminuevos</button>
       <button mat-menu-item>Agenda tu prueba de manejo</button>
       <button mat-menu-item>Solicita una cotización</button>
       <button mat-menu-item>Tomamos tu auto a cuenta</button>

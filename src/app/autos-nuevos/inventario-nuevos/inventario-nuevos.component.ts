@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiInventarioNuevosService } from '../services/api-inventario-nuevos.service';
+import { ApiInventarioNuevosService } from '../../services/api-inventario-nuevos.service';
 
 @Component({
   selector: 'app-inventario-nuevos',

@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { InventarioNuevosComponent } from './inventario-nuevos/inventario-nuevos.component';
-import { NuestrasMarcasComponent } from './nuestras-marcas/nuestras-marcas.component';
-import { PruebaManejoComponent } from './prueba-manejo/prueba-manejo.component';
-import { CotizacionComponent } from './cotizacion/cotizacion.component';
-import { AutoCuentaComponent } from './auto-cuenta/auto-cuenta.component';
+import { InventarioNuevosComponent } from './autos-nuevos/inventario-nuevos/inventario-nuevos.component';
+import { NuestrasMarcasComponent } from './autos-nuevos/nuestras-marcas/nuestras-marcas.component';
+import { PruebaManejoComponent } from './autos-nuevos/prueba-manejo/prueba-manejo.component';
+import { CotizacionComponent } from './autos-nuevos/cotizacion/cotizacion.component';
+import { AutoCuentaComponent } from './autos-nuevos/auto-cuenta/auto-cuenta.component';
+import { InventarioComponent } from './seminuevos/inventario/inventario.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'auto-cuenta',
     component: AutoCuentaComponent
+  },
+  {
+    path: 'inventario',
+    component: InventarioComponent
   },
 ];
 
