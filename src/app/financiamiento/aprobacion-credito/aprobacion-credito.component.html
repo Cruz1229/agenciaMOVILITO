@@ -13,6 +13,131 @@
                     <div class="fields">
                         <div class="two-columns">
                             <div class="nombre">
+                                <label>Nombre: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su nombre</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="inicial">
+                                <label>Inicial del segundo nombre: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su inicial</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <label>Apellidos: </label>
+                        <mat-form-field>
+                            <mat-label>Ingrese sus apellidos</mat-label>
+                            <input matInput required>
+                        </mat-form-field>
+                        <div class="two-columns">
+                            <div class="correo">
+                                <label>Correo eléctronico: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su correo</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="telefono">
+                                <label>Teléfono: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su telefono</mat-label>
+                                    <input matInput #input type="number" (input)="onInputChange($event)" required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button id="submit" type="submit" mat-raised-button>Siguiente</button>
+                        </div>
+                    </div>
+                </form>
+            </mat-tab>
+            <mat-tab label="Paso 2">
+                <div class="titulo">
+                    <h4>Este sitio está seguro. Para su protección hemos asegurado su información sobre una encriptación de 128 bits</h4>
+                </div>
+                <form #myForm="ngForm" (ngSubmit)="siguientePaso(myForm)">
+                    <div class="fields">
+                        <div class="two-columns">
+                            <div class="direccion">
+                                <label>Dirección: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su dirección</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="nacimiento">
+                                <label>Fecha de nacimiento: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su fecha de nacimientor</mat-label>
+                                    <input matInput [matDatepicker]="picker1">
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker1></mat-datepicker>
+                                  </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="threeColumns">
+                            <div class="ciudad">
+                                <label>Ciudad: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingresa tu ciudad</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="estado">
+                                <label>Estado: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su estado</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="cp">
+                                <label>Código postal: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su código postal</mat-label>
+                                    <input matInput #input type="number" (input)="onInputChangeCP($event)" required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="two-columns">
+                            <div class="situacion">
+                                <label>Situación de vivienda: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su situación de vivienda</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="mensualidad">
+                                <label>Mensualidad de propiedad: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese la mensualidad de su propiedad</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <label>Fecha de mudanza: </label>
+                        <mat-form-field>
+                            <mat-label>Ingrese su fecha de mudanza</mat-label>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                        <div class="submit">
+                            <button id="submit" type="submit" mat-raised-button>Siguiente</button>
+                        </div>
+                    </div>
+                </form>
+            </mat-tab>
+            <mat-tab label="Paso 3">
+                <div class="titulo">
+                    <h4>Este sitio está seguro. Para su protección hemos asegurado su información sobre una encriptación de 128 bits</h4>
+                </div>
+                <form #myForm="ngForm" (ngSubmit)="siguientePaso(myForm)">
+                    <div class="fields">
+                        <div class="two-columns">
+                            <div class="nombre">
                                 <label>Empleador: </label>
                                 <mat-form-field>
                                     <mat-label>Ingrese su nombre</mat-label>
@@ -48,12 +173,12 @@
                                 <label>Inicio del empleo: </label>
                                 <mat-form-field>
                                     <mat-label>Ingresa los rangos de fecha</mat-label>
-                                    <mat-date-range-input [rangePicker]="picker">
+                                    <mat-date-range-input [rangePicker]="picker3">
                                       <input matStartDate placeholder="Fecha inicio">
                                       <input matEndDate placeholder="Fecha fin">
                                     </mat-date-range-input>
-                                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                                    <mat-date-range-picker #picker></mat-date-range-picker>
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker3"></mat-datepicker-toggle>
+                                    <mat-date-range-picker #picker3></mat-date-range-picker>
                                 </mat-form-field>
                             </div>
                             <div class="salario">
@@ -117,12 +242,12 @@
                                 <label>Inicio y fin del empleo: </label>
                                 <mat-form-field>
                                     <mat-label>Ingresa los rangos de fecha</mat-label>
-                                    <mat-date-range-input [rangePicker]="picker">
+                                    <mat-date-range-input [rangePicker]="picker4">
                                       <input matStartDate placeholder="Fecha inicio">
                                       <input matEndDate placeholder="Fecha fin">
                                     </mat-date-range-input>
-                                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                                    <mat-date-range-picker #picker></mat-date-range-picker>
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker4"></mat-datepicker-toggle>
+                                    <mat-date-range-picker #picker4></mat-date-range-picker>
                                 </mat-form-field>
                             </div>
                             <div class="consultor">
@@ -139,11 +264,33 @@
                     </div>
                 </form>
             </mat-tab>
-            <mat-tab label="Paso 2">
-                
+            <mat-tab label="Paso 4">
+                <div class="titulo">
+                    <h4>Políticas de privacidad</h4>
+                </div>
+                <div class="subtitulo">
+                    <h1>POLÍTICA DE PRIVACIDAD Y ACUERDO SOBRE EL USO DEL SITIO WEB</h1>
+                </div>
+                <div class="chk-uno">
+                    <mat-checkbox class="example-margin">
+                        El concesionario tiene el derecho a compartir información personal que no sea pública con empresas y organizaciones externas por ejemplo empresas de análisis de mercado, proveedores financiero, y otras organizaciones de solicitud.
+                    </mat-checkbox>
+                    <mat-checkbox class="example-margin">
+                        El concesionario no tiene el derecho a compartir información personal que no sea pública con empresas y organizaciones externas, menos lo que indica la política de privacidad.
+                    </mat-checkbox>
+                </div>
+                <p>
+                    Certifico que toda la información contenida en este documento es fiel a lo mejor de mi conocimiento. Al colocar mi nombre abajo, yo certifico que soy la persona que presenta esta solicitud y autorizo a Grupo MOVILITO para procesar esta información mediante la ejecución de una investigación de crédito. Este pedido será para el propósito de calificar para financiamiento de autos.
+                </p>
+                <div class="aviso">
+                    <mat-checkbox class="example-margin">
+                        He leido y acepto el Aviso de Privacidad
+                    </mat-checkbox>
+                </div>
+                <div class="enviar">
+                    <button id="submit" mat-raised-button>Enviar</button>
+                </div>
             </mat-tab>
-            <mat-tab label="Paso 3"></mat-tab>
-            <mat-tab label="Paso 4"></mat-tab>
           </mat-tab-group>
     </mat-card> 
 </app-content>

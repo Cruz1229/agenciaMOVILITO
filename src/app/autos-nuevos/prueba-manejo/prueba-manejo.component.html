@@ -16,71 +16,71 @@
             <div class="image">
                 <img src="../../assets/img/prubaManejo.jpg">
             </div>
-            <form (submit)="$event.preventDefault()">
+            <form (submit)="eviarDatos()">
                 <div class="fields">
                     <div class="twoColumns">
                         <div class="nombre">
                             <label>Nombre: </label>
                             <mat-form-field>
                                 <mat-label>Ingrese su nombre</mat-label>
-                                <input matInput #input [ngModel]="nombre" required>
+                                <input matInput name="nombre" #input [ngModel]="nombre" (input)="onInputName($event)" required>
                             </mat-form-field>
                         </div>
                         <div class="apellidos">
                             <label>Apellidos: </label>
                             <mat-form-field>
                                 <mat-label>Ingrese sus apellidos</mat-label>
-                                <input matInput required>
+                                <input matInput name="apellidos" #input [ngModel]="apellidos" (input)="onInputApellido($event)" required>
                             </mat-form-field>
                         </div>
                     </div>
                     <label>Correo Electrónico: </label>
                     <mat-form-field>
                         <mat-label>Ingresa tu correo electrónico</mat-label>
-                        <input matInput placeholder="pat@example.com" required>
+                        <input matInput placeholder="pat@example.com" name="correo" #input [ngModel]="correo" (input)="onInputCorreo($event)" required>
                     </mat-form-field>
                     <div class="twoColumns">
                         <div class="telefono">
                             <label>Número de teléfono: </label>
                             <mat-form-field>
                                 <mat-label>Ingrese su número de teléfono</mat-label>
-                                <input matInput #input type="number" (input)="onInputChange($event)" required>
+                                <input matInput #input name="telefono" [ngModel]="telefono" type="number" (input)="onInputChange($event)" required>
                             </mat-form-field>
                         </div>
                         <div class="anno">
                             <label>Año: </label>
                             <mat-form-field>
-                                <mat-label>Ingrese el año del carro</mat-label>
-                                <input matInput #input type="number" (input)="onInputChangeYear($event)" required>
+                                <mat-label>Ingrese el año del vehiculo</mat-label>
+                                <input matInput #input name="anio" [ngModel]="anio" (input)="onInputAnio($event)" required>
                             </mat-form-field>
-                        </div>
+                        </div>                                                    
                     </div>
                     <div class="twoColumns">
                         <div class="marca">
                             <label>Marca: </label>
                             <mat-form-field>
-                                <mat-label>Ingrese la marca</mat-label>
-                                <input matInput required>
+                                <mat-label>Ingrese la marca de su vehiculo</mat-label>
+                                <input matInput #input name="marca" [ngModel]="marca" (input)="onInputMarca($event)" required>
                             </mat-form-field>
                         </div>
                         <div class="modelo">
                             <label>Modelo: </label>
                             <mat-form-field>
-                                <mat-label>Ingrese el modelo</mat-label>
-                                <input matInput required>
+                                <mat-label>Ingrese el modelo de su vehiculo</mat-label>
+                                <input matInput #input name="modelo" [ngModel]="modelo" (input)="onInputModelo($event)" required>
                             </mat-form-field>
                         </div>
                     </div>
                     <label>Fecha: </label>
                     <mat-form-field>
-                        <input matInput type="date" required>
+                        <input matInput type="date" #input name="fecha" [ngModel]="fecha" (input)="onInputFecha($event)" required>
                     </mat-form-field>
                     <label>Hora: </label>
                     <mat-form-field>
-                        <input matInput type="time" required>
+                        <input matInput type="time" #input name="apellidos" [ngModel]="apellidos" (input)="onInputHora($event)" required>
                     </mat-form-field>
                     <div class="submit">
-                        <button id="submit" type="submit" mat-raised-button>Basic</button>
+                        <button id="submit" type="submit" mat-raised-button>Enviar Datos</button>
                     </div>
                 </div>
             </form>

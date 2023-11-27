@@ -45,7 +45,12 @@ mat-form-field {
     gap: 20px;
 }
 
-.nombre, .direccion, .telefono, .ocupacion, .empleo, .salario, .ingreso, .fuente, .anterior, .direccion-empleador, .ocupacion-previa, .inicio-empleo, .consultor{
+.threeColumns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nombre, .direccion, .telefono, .ocupacion, .empleo, .salario, .ingreso, .fuente, .anterior, .direccion-empleador, .ocupacion-previa, .inicio-empleo, .consultor, .nacimiento, .ciudad, .estado, .cp, .mensualidad, .situacion, .inicial, .correo{
     display: flex;
     flex-direction: column;
 }
@@ -65,10 +70,6 @@ input.example-right-align::-webkit-inner-spin-button {
     display: none;
 }
 
-input.example-right-align {
-    -moz-appearance: textfield;
-}
-
 .submit {
     display: flex;
     justify-content: end;
@@ -80,4 +81,32 @@ input.example-right-align {
 #submit {
     border-radius: 50px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo h1 {
+    color: #FFFFFF;
+}
+
+.chk-uno .example-margin {
+    margin-top: 20px;
+}
+
+.aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }

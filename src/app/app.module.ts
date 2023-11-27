@@ -20,6 +20,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from  '@angular/common/http';
 import { NuestrasMarcasComponent } from './autos-nuevos/nuestras-marcas/nuestras-marcas.component';
 import { PruebaManejoComponent } from './autos-nuevos/prueba-manejo/prueba-manejo.component';
@@ -78,6 +80,8 @@ import { NgIf, JsonPipe } from '@angular/common';
     MatTabsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatCheckboxModule,
+    MatSelectModule,
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,

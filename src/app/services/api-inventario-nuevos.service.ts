@@ -24,4 +24,15 @@ export class ApiInventarioNuevosService {
             return error
         });
   }
+
+  getInventariosPorAnno(anio:any) {
+    return this.http.get<any>(this.URL, { headers: { "Accept": "application/json" }})
+        .toPromise()
+        .then((response) => {
+            return response
+        })
+        .catch((error) => {
+            return error
+        });
+  }
 }
