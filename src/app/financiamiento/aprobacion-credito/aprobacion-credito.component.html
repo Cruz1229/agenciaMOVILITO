@@ -1,0 +1,149 @@
+<app-toolbar></app-toolbar>
+<app-content>
+    <div class="title">
+        <p>PRE-APROBACIÓN DE CRÉDITO</p>
+    </div>
+    <mat-card class="example-card">
+        <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="Paso 1">
+                <div class="titulo">
+                    <h4>Este sitio está seguro. Para su protección hemos asegurado su información sobre una encriptación de 128 bits</h4>
+                </div>
+                <form #myForm="ngForm" (ngSubmit)="siguientePaso(myForm)">
+                    <div class="fields">
+                        <div class="two-columns">
+                            <div class="nombre">
+                                <label>Empleador: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su nombre</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="direccion">
+                                <label>Dirección del empleado: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su nombre</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="two-columns">
+                            <div class="ocupacion">
+                                <label>Ocupación: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su ocupación</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="telefono">
+                                <label>Teléfono del trabajo: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su teléfono</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="two-columns">
+                            <div class="empleo">
+                                <label>Inicio del empleo: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingresa los rangos de fecha</mat-label>
+                                    <mat-date-range-input [rangePicker]="picker">
+                                      <input matStartDate placeholder="Fecha inicio">
+                                      <input matEndDate placeholder="Fecha fin">
+                                    </mat-date-range-input>
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-date-range-picker #picker></mat-date-range-picker>
+                                </mat-form-field>
+                            </div>
+                            <div class="salario">
+                                <label>Salario mensual: </label>
+                                <mat-form-field floatLabel="always">
+                                    <mat-label>Ingresa tu salario mensual</mat-label>
+                                    <input matInput type="number" class="example-right-align" placeholder="0">
+                                    <span matTextPrefix>$&nbsp;</span>
+                                    <span matTextSuffix>.00</span>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="two-columns">
+                            <div class="ingreso">
+                                <label>Otro ingreso: </label>
+                                <mat-form-field floatLabel="always">
+                                    <mat-label>Ingresa tu ingreso</mat-label>
+                                    <input matInput type="number" class="example-right-align" placeholder="0">
+                                    <span matTextPrefix>$&nbsp;</span>
+                                    <span matTextSuffix>.00</span>
+                                </mat-form-field>
+                            </div>
+                            <div class="text">
+                                <p>Pensión compensatoria, manutención de hijos, o ingreso de manutención por separación, no se necesita revelar si no quieres que sea considerado como una base para repagamiento de esta obligación.</p>
+                            </div>
+                        </div>
+                        <div class="two-columns">
+                            <div class="fuente">
+                                <label>Fuente de otros ingresos: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su otra fuente de ingresos</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="anterior">
+                                <label>Empleador anterior: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su empleador anterior</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="two-columns">
+                            <div class="direccion-empleador">
+                                <label>Dirección del empleador anterior: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese la dirección del empleador</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                            <div class="ocupacion-previa">
+                                <label>Ocupación previa: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su ocupación anterior</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="two-columns">
+                            <div class="inicio-empleo">
+                                <label>Inicio y fin del empleo: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingresa los rangos de fecha</mat-label>
+                                    <mat-date-range-input [rangePicker]="picker">
+                                      <input matStartDate placeholder="Fecha inicio">
+                                      <input matEndDate placeholder="Fecha fin">
+                                    </mat-date-range-input>
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-date-range-picker #picker></mat-date-range-picker>
+                                </mat-form-field>
+                            </div>
+                            <div class="consultor">
+                                <label>Consultor de venta: </label>
+                                <mat-form-field>
+                                    <mat-label>Ingrese su consultor de venta</mat-label>
+                                    <input matInput required>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button id="submit" type="submit" mat-raised-button>Siguiente</button>
+                        </div>
+                    </div>
+                </form>
+            </mat-tab>
+            <mat-tab label="Paso 2">
+                
+            </mat-tab>
+            <mat-tab label="Paso 3"></mat-tab>
+            <mat-tab label="Paso 4"></mat-tab>
+          </mat-tab-group>
+    </mat-card> 
+</app-content>

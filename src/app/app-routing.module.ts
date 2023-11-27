@@ -16,6 +16,7 @@ import { PromocionServiciosComponent } from './promociones/promocion-servicios/p
 import { PostVentaComponent } from './servicios-refacciones/post-venta/post-venta.component';
 import { RefaccionesOriginalesComponent } from './servicios-refacciones/refacciones-originales/refacciones-originales.component';
 import { DepartamentoVentasComponent } from './financiamiento/departamento-ventas/departamento-ventas.component';
+import { AprobacionCreditoComponent } from './financiamiento/aprobacion-credito/aprobacion-credito.component';
 
 const routes: Routes = [
   {
@@ -86,6 +87,10 @@ const routes: Routes = [
   {
     path: 'departamento-ventas',
     component: DepartamentoVentasComponent
+  },
+  {
+    path: 'aprobacion-credito',
+    component: AprobacionCreditoComponent
   },
 ];
 

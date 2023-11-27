@@ -17,6 +17,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from  '@angular/common/http';
 import { NuestrasMarcasComponent } from './autos-nuevos/nuestras-marcas/nuestras-marcas.component';
 import { PruebaManejoComponent } from './autos-nuevos/prueba-manejo/prueba-manejo.component';
@@ -33,6 +36,8 @@ import { PromocionServiciosComponent } from './promociones/promocion-servicios/p
 import { PostVentaComponent } from './servicios-refacciones/post-venta/post-venta.component';
 import { RefaccionesOriginalesComponent } from './servicios-refacciones/refacciones-originales/refacciones-originales.component';
 import { DepartamentoVentasComponent } from './financiamiento/departamento-ventas/departamento-ventas.component';
+import { AprobacionCreditoComponent } from './financiamiento/aprobacion-credito/aprobacion-credito.component';
+import { NgIf, JsonPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -55,6 +60,7 @@ import { DepartamentoVentasComponent } from './financiamiento/departamento-venta
     PostVentaComponent,
     RefaccionesOriginalesComponent,
     DepartamentoVentasComponent,
+    AprobacionCreditoComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,9 +75,14 @@ import { DepartamentoVentasComponent } from './financiamiento/departamento-venta
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
+    MatTabsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgIf,
+    JsonPipe,
   ],
   providers: [],
   bootstrap: [AppComponent]
